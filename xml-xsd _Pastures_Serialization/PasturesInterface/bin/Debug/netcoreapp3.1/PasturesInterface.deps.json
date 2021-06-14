@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PasturesInterface/1.0.0": {
+        "dependencies": {
+          "Pastures": "1.0.0"
+        },
+        "runtime": {
+          "PasturesInterface.dll": {}
+        }
+      },
+      "Pastures/1.0.0": {
+        "runtime": {
+          "Pastures.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PasturesInterface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pastures/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

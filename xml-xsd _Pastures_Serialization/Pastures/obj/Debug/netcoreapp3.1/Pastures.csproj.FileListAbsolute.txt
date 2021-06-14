@@ -1,0 +1,15 @@
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\bin\Debug\netcoreapp3.1\Pastures.exe
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\bin\Debug\netcoreapp3.1\Pastures.deps.json
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\bin\Debug\netcoreapp3.1\Pastures.runtimeconfig.json
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\bin\Debug\netcoreapp3.1\Pastures.runtimeconfig.dev.json
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\bin\Debug\netcoreapp3.1\Pastures.dll
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\bin\Debug\netcoreapp3.1\Pastures.pdb
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\obj\Debug\netcoreapp3.1\Pastures.csprojAssemblyReference.cache
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\obj\Debug\netcoreapp3.1\Pastures.AssemblyInfoInputs.cache
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\obj\Debug\netcoreapp3.1\Pastures.AssemblyInfo.cs
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\obj\Debug\netcoreapp3.1\Pastures.csproj.CoreCompileInputs.cache
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\obj\Debug\netcoreapp3.1\Pastures.dll
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\obj\Debug\netcoreapp3.1\Pastures.pdb
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\obj\Debug\netcoreapp3.1\Pastures.genruntimeconfig.cache
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\bin\Debug\netcoreapp3.1\Pastures.xsd
+C:\Users\grzelakm\Desktop\OOD\XML-past\Pastures\bin\Debug\netcoreapp3.1\Pastures-xml.xml

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>      
+<spotkania
+  xmlns="http://tempuri.org/Pastures.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://tempuri.org/Pastures.xsd Pastures.xsd">
+<pastures>
+    <pasture area="20" fence="short" id="tr2" name="Quiet Meadow"/>
+    <pasture area="31" fence="4.00" id="mr2" name="Green Bright Flatland"/>
+    <pasture area="99" fence="tall" id="bw4" name="Wasteland"/>
+  </pastures>
+  <creatures>
+    <centaur name="Larry" age="23" id="1">
+      <tatoo picture="butterfly"/>
+      <tatoo picture="pidgeon"/>
+      <tatoo picture="minotaur"/>
+    </centaur>
+    <centaur name="Sonny" age="25" id="2"/>
+    <minotaur name="Roger" age="15" id="4" mass="989"/>
+  </creatures>
+  <plants>
+    <plant name="plant1">
+      <pasture id="tr2"/>
+      <pasture id="mr2"/>
+      <creature id="2"/>
+      <creature id="1"/>
+    </plant>
+    <plant name="plant2">
+      <pasture id="bw4"/>
+      <pasture id="mr2"/>
+      <creature id="4"/>
+      <creature id="1"/>
+    </plant>
+  </plants>
+</spotkania>

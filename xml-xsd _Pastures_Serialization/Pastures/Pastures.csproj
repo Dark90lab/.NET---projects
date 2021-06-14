@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	 <RootNamespace>pastures_xml</RootNamespace>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\fromxsd\Pastures.cs" />
+  </ItemGroup>
+  
+<!-- In .net older than 5.0 this element should exist somewhere in csproj. Add Generator rule to it.
+  In newer dotnet you may need to add the whole element. -->
+  <ItemGroup>
+    <ResourceFile Include="Pastures.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateClassesFromXSD</Generator>
+    </ResourceFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Pastures-xml.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Pastures.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+  <!-- Append the following elements at the end of file, just before  </Project> -->
+  <Target Name="UpdateClassesFromXSD" DependsOnTargets="_UpdateClassesFromXSD" Condition="'@(ResourceFile)' != ''">
+    <ItemGroup>
+      <Compile Include="$(IntermediateOutputPath)fromxsd/*.cs" />
+    </ItemGroup>
+  </Target>
+  <Target Name="_UpdateClassesFromXSD" Inputs="Pastures.xsd" Outputs="$(IntermediateOutputPath)fromxsd/*.cs">
+    <Exec Command="mkdir $(IntermediateOutputPath)fromxsd" IgnoreExitCode="true" />
+    <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\xsd.exe&quot; /c /n:Pastures /out:$(IntermediateOutputPath)fromxsd Pastures.xsd" />
+  </Target>
+  <PropertyGroup>
+    <CoreCompileDependsOn>UpdateClassesFromXSD;$(CoreCompileDependsOn)</CoreCompileDependsOn>
+  </PropertyGroup>
+
+</Project>
